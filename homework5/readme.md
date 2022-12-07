@@ -105,3 +105,18 @@ for _id in id_list:
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI.png"/>
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/>
 </div>
+
+
+# Part 3:  AI module myAI.pkz 訓練出來放到 web (save & load trained model)
+在檔案(myEA.py)中使用pickle, gzip來保存訓練好的模型，並且在modelPredict呼叫並進行數據的預測和更新
+
+保存(myEA.py)
+```python
+with gzip.GzipFile('./myAI.pgz', 'w') as f:
+    pickle.dump(model, f)
+```
+讀取(modelPredict.py)
+```python
+with gzip.open('./myAI.pgz', 'r') as f:
+    model = pickle.load(f)
+```
