@@ -5,4 +5,4 @@ XAMPP啟用Apache, Mysql，並新增使用者和資料庫(包含匯入資料表)
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part1_noAIHighcharts.png"/>
 </div>
 
-# Part 2
+# Part 2: AI Module 與 web 互動 (使用trainN.csv訓練SVM model)
