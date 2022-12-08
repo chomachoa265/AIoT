@@ -140,4 +140,4 @@ ngrok http <XAMPP Apache listen port>
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part4_testNgrok.png"/>
 </div>
 
-# Part 5: 放到 GITHUB 自動部署到 Railway
+# Part 5: 放到 GITHUB 自動部署到 Heroku(or Railway)
