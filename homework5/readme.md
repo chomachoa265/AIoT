@@ -134,6 +134,10 @@ echo $output
 ```
 ngrok http <XAMPP Apache listen port>
 ```
-執行後，
+執行後，domain name為0fda-2001-b400-e4d4-9966-4931-116-faac-5376.jp.ngrok.io，並進行App的測試。
+<div align='center'>
+  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part4_resultNgrok.png"/>
+  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part4_testNgrok.png"/>
+</div>
 
 # Part 5: 放到 GITHUB 自動部署到 Railway
