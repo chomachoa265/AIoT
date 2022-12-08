@@ -103,20 +103,37 @@ for _id in id_list:
 執行AI Module前後的結果比較
 <div align='center'>
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI.png"/>
-  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/>
+<!--   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/> -->
 </div>
 
 
 # Part 3:  AI module myAI.pkz 訓練出來放到 web (save & load trained model)
-在檔案(myEA.py)中使用pickle, gzip來保存訓練好的模型，並且在modelPredict呼叫並進行數據的預測和更新
+在檔案(myEA.py)中使用pickle, gzip來保存訓練好的模型，並且在modelPredict呼叫並進行數據的預測和更新，<br/>
+這樣就不需要訓練資料集(trainN.csv)以及訓練模型，只需載入預訓練好的模型(myAI.pkz)就可以進行預測和更新。
 
 保存(myEA.py)
 ```python
-with gzip.GzipFile('./myAI.pgz', 'w') as f:
+with gzip.GzipFile('./myAI.pkz', 'w') as f:
     pickle.dump(model, f)
 ```
 讀取(modelPredict.py)
 ```python
-with gzip.open('./myAI.pgz', 'r') as f:
+with gzip.open('./myAI.pkz', 'r') as f:
     model = pickle.load(f)
 ```
+並將執行路徑修改為modelPredict(GetPredict.php)
+```php
+$output = shell_exec('python modelPredict.py');
+echo $output
+```
+
+# Part  4: 改成 ngrok 讓他有一個domain name
+
+下載ngrok(https://ngrok.com/download) ，並持續讓他在背景執行，ngrok會派發一個domain name讓外網也能夠存取你的App(不侷限在本地端)。<br />
+命令列語法(綁定Apache的監聽埠)
+```
+ngrok http <XAMPP Apache listen port>
+```
+執行後，
+
+# Part 5: 放到 GITHUB 自動部署到 Railway
