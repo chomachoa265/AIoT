@@ -103,7 +103,7 @@ for _id in id_list:
 執行AI Module前後的結果比較
 <div align='center'>
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI.png"/>
-<!--   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/> -->
+  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/>
 </div>
 
 
