@@ -228,6 +228,7 @@ def getPredict():
     return "OK"
 ```
 ### 結果呈現
+在Flask app實際測試連結/AI，模型能夠正常運行
 <div align='center'>
   <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part5_flask_AI.png"/>
 </div>
