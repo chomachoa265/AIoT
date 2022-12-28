@@ -110,16 +110,6 @@ def getPredict():
 
     return "OK"
 
-
-    
-
-
-
-# @app.route('/media/<path:repoID>/<path:type>/<path:filename>')
-# def media(repoID, type, filename):
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
 
