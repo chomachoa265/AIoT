@@ -1,4 +1,4 @@
-# 使用方法
+# 使用方法(需啟用XAMPP MYSQL以及匯入Sensor資料表)
 
 ### 安裝需求套件
 ```command
