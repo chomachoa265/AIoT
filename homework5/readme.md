@@ -229,8 +229,7 @@ def getPredict():
 ```
 ### 結果呈現
 <div align='center'>
-  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI.png"/>
-  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part2_UI_pressResult.png"/>
+  <img src="https://github.com/chomachoa265/AIoT/blob/main/homework5/result_assets/part5_flask_AI.png"/>
 </div>
 
 # Part  5: 改成 ngrok 讓他有一個domain name
