@@ -122,6 +122,8 @@ echo $output
 ### 環境需求套件
 1. Flask
 2. pymysql
+3. pandas
+4. numpy
 ### 代碼實現
 在main.py內去實現Part1 ~ Part3的功能，主要使用pymysql來與資料庫進行互動，
 
@@ -174,6 +176,11 @@ def getPredict():
     with gzip.GzipFile('./models/myAI.pkz', 'w') as f:
         pickle.dump(model, f)
     #
+```
+Part 3.則是將上述兩段程式碼，用以下讀取模型的代碼取代掉，就可以在不讀取訓練資料的狀況下使用模型
+```python
+with gzip.open('./models/myAI.pkz', 'r') as f:
+        model = pickle.load(f)
 ```
 訓練完模型，將sensors資料的預測狀態利用模型重新評估，並使用update語法更新回資料庫
 ```python
