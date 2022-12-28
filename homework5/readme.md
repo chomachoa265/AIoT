@@ -238,7 +238,7 @@ def getPredict():
 下載ngrok(https://ngrok.com/download) ，並持續讓他在背景執行，ngrok會派發一個domain name讓外網也能夠存取你的App(不侷限在本地端)。<br />
 命令列語法(綁定Apache的監聽埠，若使用Flask則綁定app.run定義的埠口(預設為5000))
 ```
-ngrok http <XAMPP Apache listen port>
+ngrok http <XAMPP Apache listen port | Flask port>
 ```
 執行後，domain name為0fda-2001-b400-e4d4-9966-4931-116-faac-5376.jp.ngrok.io，並進行App的測試。
 <div align='center'>
