@@ -1,0 +1,114 @@
+// 
+
+.text-lg-bold {
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+}
+
+
+.selected {
+    color: lightblue;
+}
+
+.selected .delete-btn {
+    width: 16px;
+    height: 16px;
+    color: gray;
+}
+
+.selected .delete-btn:hover{
+    color: red;
+}
+
+
+
+
+// 
+.app-wrapper {
+    text-align: left;
+}
+
+.app-results {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    padding: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.results-left {
+    display: block;
+    margin: 10px;
+}
+
+.results-right {
+    display: block;
+    margin: 10px;
+    // max-height: 800px;
+}
+
+
+.results-header {
+    width: 100%;
+}
+
+.results-images {
+    width: 100%;
+    // display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adjust-images{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% auto;
+}
+
+// folder
+
+.folder-info {
+    font-size: .85em;
+}
+
+
+
+
+// 
+.img-fluid {
+    max-height: 100%;
+}
+
+
+
+@media screen and (min-width: 1500px) {
+    .app-wrapper {
+        display: block;
+        width: 1500px;
+        margin: auto;
+        height: auto;
+    }
+    .custom-flex-group {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px){
+    .app-wrapper {
+        display: block;
+        width: 600px;
+        margin: auto;
+        height: auto;
+    }
+    .results-left{
+        display: none;
+    }
+    .custom-flex-group {
+        flex-direction: column;
+        height: 1000px;
+    }
+}

@@ -1,0 +1,93 @@
+.app-wrapper {
+    display: block;
+}
+.app-dashboard {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+
+.dashboard-up {
+    display: flex;
+    flex-direction: column;
+    height: 825px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.dashboard-statistic {
+    display: flex;
+    height: 825px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+.text-lb-bold {
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.size-xl{
+    font-size: 2.2rem;
+}
+
+
+
+
+.repo-list-group{
+    max-height: 800px;
+    overflow: hidden;
+}
+
+
+.list-group-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    border-bottom: 1px solid #333333;
+    cursor: pointer;
+}
+
+// .list-group-item:hover{
+//     background-color: #363636;
+// }
+
+.list-group-item .item-right{
+    display: block;
+    width: 30%;
+}
+.list-group-item .item-left {
+    display: block;
+    width: 70%;
+}
+
+.item-left .date{
+    font-size: .6em;
+    color: gray;
+}
+
+.item-left .name{
+    font-size: 1em;
+    color: lightblue;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 1500px) {
+    .app-wrapper {
+        display: block;
+        width: 1500px;
+        margin: auto;
+        height: auto;
+    }
+}
